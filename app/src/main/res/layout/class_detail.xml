@@ -1,0 +1,27 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tbl"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    android:id="@+id/detailList"
+    style="?android:attr/textAppearanceLarge"
+    android:padding="16dp"
+    android:textIsSelectable="true"
+    tools:context="shoeb.graderv3.ClassDetailFragment"
+    android:text="hello"
+    android:orientation="vertical"
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+</TableLayout>

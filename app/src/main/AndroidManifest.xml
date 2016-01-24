@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shoeb.grader">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="shoeb.grader.ClassListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="shoeb.grader.ClassDetailActivity"
+            android:label="@string/title_class_detail"
+            android:parentActivityName="shoeb.grader.ClassListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="shoeb.grader.ClassListActivity" />
+        </activity>
+
+        <activity
+            android:name="shoeb.grader.addActivityName"
+            android:label="@string/class_name" />
+        <activity
+            android:name="shoeb.grader.addNumber"
+            android:label="@string/class_count" />
+        <activity
+            android:name="shoeb.grader.setGradeAndPercentages"
+            android:label="@string/class_count" />
+        <activity
+            android:name=".infoActivity"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
